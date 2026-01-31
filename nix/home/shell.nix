@@ -1,9 +1,6 @@
 { pkgs, ... }: 
 let
-  nerdFontSymbols = builtins.fromTOML (builtins.readFile (pkgs.fetchurl {
-    url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
-    hash = "sha256-zxXDmI6V6wwKeoifF1+qC9sOtIQKHaF2ZyX7RvP0Fzg=";
-  }));
+  nerdFontSymbols = builtins.fromTOML (builtins.readFile "${pkgs.starship.src}/docs/public/presets/toml/nerd-font-symbols.toml");
 in
 {
   programs.zsh = {
