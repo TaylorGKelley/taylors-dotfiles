@@ -13,7 +13,7 @@
       zoxide
 
       # programming languages
-      node
+      nodejs
       pnpm
 
       # misc

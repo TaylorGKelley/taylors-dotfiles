@@ -1,4 +1,11 @@
-_: {
+{ pkgs, ... }: 
+let
+  nerdFontSymbols = builtins.fromTOML (builtins.readFile (pkgs.fetchurl {
+    url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
+    hash = "sha256-zxXDmI6V6wwKeoifF1+qC9s0tIQKHaF2ZyX7RvP0Fzg=";
+  }));
+in
+{
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -14,11 +21,6 @@ _: {
 
   programs.starship = {
     enable = true;
-    settings = {
-      "__include" = [ (builtins.fromTOML (builtins.readFile (pkgs.fetchurl {
-        url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
-        sha256 = "sha256-YOUR_HASH_HERE"; # Nix will error and give you the correct hash
-      }))) ];
-    };
+    settings = nerdFontSymbols;
   };
 }
