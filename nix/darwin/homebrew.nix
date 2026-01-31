@@ -26,6 +26,7 @@
 
       # messaging
       "signal"
+      "google-messages"
 
       # other
       "firefox@developer-edition"
