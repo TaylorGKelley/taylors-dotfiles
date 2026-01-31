@@ -26,4 +26,27 @@
       };
     };
   };
+
+  launchd.user.agents = {
+    # 1. Colima (Docker Runtime)
+    colima = {
+      command = "${pkgs.colima}/bin/colima start --foreground";
+      serviceConfig = {
+        KeepAlive = true;
+        RunAtLoad = true;
+        StandardOutPath = "/tmp/colima.out.log";
+        StandardErrorPath = "/tmp/colima.err.log";
+      };
+    };
+
+    # 2. Proton VPN
+    # Note: This just opens the app. You'll want to enable 
+    # "Connect on App Launch" inside the Proton VPN App settings.
+    protonvpn = {
+      command = "/usr/bin/open -a 'Proton VPN'";
+      serviceConfig = {
+        RunAtLoad = true;
+      };
+    };
+  };
 }
