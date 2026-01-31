@@ -2,7 +2,7 @@
 let
   nerdFontSymbols = builtins.fromTOML (builtins.readFile (pkgs.fetchurl {
     url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
-    hash = "sha256-zxXDmI6V6wwKeoifF1+qC9s0tIQKHaF2ZyX7RvP0Fzg=";
+    hash = "sha256-zxXDmI6V6wwKeoifF1+qC9sOtIQKHaF2ZyX7RvP0Fzg=";
   }));
 in
 {
