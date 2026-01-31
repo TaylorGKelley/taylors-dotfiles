@@ -15,11 +15,10 @@ _: {
   programs.starship = {
     enable = true;
     settings = {
-      add_newline = false;
-      character = {
-        success_symbol = "[λ](bold green)";
-        error_symbol = "[λ](bold red)";
-      };
+      "__include" = [ (builtins.fromTOML (builtins.readFile (pkgs.fetchurl {
+        url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
+        sha256 = "sha256-YOUR_HASH_HERE"; # Nix will error and give you the correct hash
+      }))) ];
     };
   };
 }
