@@ -4,7 +4,7 @@
     packages = with pkgs; [
       # dev tools
       curl
-      vim
+      neovim
       tmux
       htop
       tree

@@ -17,20 +17,21 @@
     casks = [
       # OS enhancements
       "aerospace"
-      "cleanshot"
-      "hiddenbar"
 
       # dev
       "ghostty"
       "zed"
+      "figma"
+      "blender"
 
       # messaging
       "signal"
-      "google-messages"
 
       # other
+      "localsend"
       "firefox@developer-edition"
       "obsidian"
+      "proton-pass"
       "protonvpn"
       "spotify"
     ];
