@@ -13,7 +13,8 @@
       zoxide
 
       # programming languages
-      mise # node, deno, bun, rust, python, etc.
+      node
+      pnpm
 
       # misc
       nil
