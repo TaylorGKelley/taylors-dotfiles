@@ -24,6 +24,15 @@
           source ${./shell-functions.sh}
         '';
       };
+      zed-editor = {
+        enable = true;
+	userSettings = {
+	  terminal = {
+	    font_family = "FiraCode Nerd Font";
+	  };
+	  buffer_font_family = "FiraCode Nerd Font";
+	};
+      };
     };
   };
 

@@ -28,6 +28,7 @@
       "signal"
 
       # other
+      "balenaetcher"
       "localsend"
       "firefox@developer-edition"
       "obsidian"
@@ -37,6 +38,7 @@
     ];
     brews = [
       "docker"
+      "docker-compose"
       "colima"
     ];
     taps = [
