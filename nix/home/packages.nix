@@ -11,6 +11,7 @@
       ripgrep
       gh
       zoxide
+      postman
 
       # programming languages
       nodejs
