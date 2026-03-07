@@ -60,5 +60,13 @@
         RunAtLoad = true;
       };
     };
+
+    ollama = {
+    	enable = true;
+
+	environmentVariables = {
+		OLLAMA_HOST = "0.0.0.0"
+	};
+    };
   };
 }
