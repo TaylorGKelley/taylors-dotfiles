@@ -12,7 +12,7 @@
       gh
       zoxide
       postman
-      claude-code
+      #claude-code
 
       # programming languages
       nodejs
