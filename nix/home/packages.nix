@@ -17,6 +17,12 @@
       # programming languages
       nodejs
       pnpm
+      # programming languages -> Rust
+      rustc
+      cargo
+      rust-analyzer # for Neovim/Zed assistance
+      clippy
+      rustfmt
 
       # misc
       nil
